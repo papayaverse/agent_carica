@@ -10,7 +10,7 @@ const PricingCard = ({ title, price, features, popular, enterprise, buttonText =
     sx={{
       position: 'relative',
       overflow: 'visible',
-      backgroundColor: popular ? 'primary.main' : 'background.paper',
+      backgroundColor: popular ? 'primary.dark' : 'background.paper',
       color: popular ? 'white' : 'text.primary',
       border: popular ? 'none' : '1px solid',
       borderColor: 'divider',
@@ -22,7 +22,7 @@ const PricingCard = ({ title, price, features, popular, enterprise, buttonText =
           position: 'absolute',
           top: -12,
           right: 12,
-          backgroundColor: popular ? 'secondary.main' : 'primary.main',
+          backgroundColor: popular ? 'secondary.dark' : 'primary.dark',
           color: 'white',
           px: 2,
           py: 0.5,
@@ -52,6 +52,7 @@ const PricingCard = ({ title, price, features, popular, enterprise, buttonText =
               alignItems: 'center',
               gap: 1,
               color: popular ? 'white' : 'text.primary',
+              fontWeight: 500,
             }}
           >
             {feature}

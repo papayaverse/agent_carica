@@ -57,22 +57,28 @@ const TestimonialCard = ({ quote, author, role, company, index }) => {
 
 const testimonials = [
   {
-    quote: "Papaya Privacy has transformed how we handle data privacy. Their solution is intuitive and comprehensive.",
-    author: "Sarah Chen",
-    role: "Privacy Officer",
-    company: "TechCorp"
-  },
-  {
-    quote: "The automated compliance features have saved us countless hours of manual work.",
-    author: "Michael Rodriguez",
+    quote: "Thanks for sharing this Report. It gives me solid evidence that we are not doing this right.",
+    author: "Kemal Badur",
     role: "CTO",
-    company: "DataSafe Solutions"
+    company: "The University of Chicago"
   },
   {
-    quote: "Outstanding support team and regular updates keep us ahead of privacy regulations.",
-    author: "Emma Thompson",
-    role: "Legal Counsel",
-    company: "Global Systems"
+    quote: "Since I talked to you guys, I've been paying more attention to cookie consent messages, and they are now pissing me off more than they used to, with their sneaky, inconsistent and plain dumb way of tricking me into consent 🙂",
+    author: "Kemal Badur",
+    role: "CTO",
+    company: "The University of Chicago"
+  },
+  {
+    quote: "This looks strong.",
+    author: "Kevin Schallert",
+    role: "Founder",
+    company: "Chambre Dark Patterns LLC"
+  },
+  {
+    quote: "I particularly like the references to the specific WCAG standard. We sometime specify the standards we will build to, and the courts will sometime apply different versions!",
+    author: "Chris Sargent",
+    role: "General Counsel",
+    company: "Photon"
   }
 ];
 

@@ -7,18 +7,22 @@ import { createTheme } from '@mui/material/styles'
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#F4A261', // Orange from logo
-      light: '#F8B682',
-      dark: '#E18A45',
+      main: '#E67E22', // Darker orange for better contrast
+      light: '#F39C12',
+      dark: '#D35400',
     },
     secondary: {
-      main: '#2F6B48', // Green from logo
-      light: '#3D8A5F',
-      dark: '#1F4A31',
+      main: '#2E7D32', // Adjusted green for better contrast
+      light: '#43A047',
+      dark: '#1B5E20',
     },
     background: {
       default: '#ffffff',
       paper: '#f8fafc',
+    },
+    text: {
+      primary: '#1A2027',
+      secondary: '#424242',
     },
   },
   typography: {

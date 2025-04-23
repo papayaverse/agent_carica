@@ -18,8 +18,9 @@ const ContactSection = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    const subject = `Demo Request from ${formData.company}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nWebsite: ${formData.website}\nPlan: ${formData.plan}`;
+    window.location.href = `mailto:ram@papayaverse.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (

@@ -54,8 +54,12 @@ const HeroSection = () => {
           alt="Carica Logo"
           sx={{
             width: { xs: 120, md: 150 },
-            height: 'auto',
+            height: { xs: 120, md: 150 }, // Make height equal to width
             mb: 4,
+            borderRadius: '50%', // Make it circular
+            objectFit: 'cover', // Ensure the image covers the area properly
+            backgroundColor: 'white', // Optional: adds a white background
+            padding: 2, // Optional: adds some padding around the logo
           }}
         />
         <Typography
@@ -74,7 +78,7 @@ const HeroSection = () => {
           sx={{
             fontSize: { xs: '1.5rem', md: '2rem' },
             fontWeight: 500,
-            color: 'rgba(255, 255, 255, 0.9)',
+            color: 'white',
             maxWidth: '800px',
             mb: 4,
           }}
@@ -95,9 +99,10 @@ const HeroSection = () => {
               fontSize: '1.125rem',
               px: 4,
               py: 2,
-              backgroundColor: 'primary.main',
+              backgroundColor: 'white',
+              color: 'primary.dark',
               '&:hover': {
-                backgroundColor: 'primary.dark',
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
               },
             }}
           >

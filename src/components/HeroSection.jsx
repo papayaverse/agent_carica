@@ -111,6 +111,9 @@ const HeroSection = () => {
           <Button
             variant="outlined"
             size="large"
+            href="https://qrco.de/bfuvgv"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               fontSize: '1.125rem',
               px: 4,

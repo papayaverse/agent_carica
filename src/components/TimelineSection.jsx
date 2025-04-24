@@ -21,16 +21,11 @@ const TimelineEvent = ({ year, region, title, description, index }) => {
         p: 3,
         position: 'relative',
         minWidth: '300px',
-        '&::before': {
-          content: '""',
-          position: 'absolute',
-          left: '-15px',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          width: '30px',
-          height: '2px',
-          backgroundColor: 'primary.main',
-          display: 'block',
+        backgroundColor: 'background.paper',
+        zIndex: 1,
+        '&:hover': {
+          transform: 'translateY(-4px)',
+          transition: 'transform 0.3s ease',
         },
       }}
     >
@@ -59,13 +54,13 @@ const TimelineSection = () => {
     },
     {
       year: '2020',
-      region: 'United States (California)',
+      region: 'California',
       title: 'CCPA',
       description: 'California Consumer Privacy Act - First major US privacy law giving consumers control over their personal data.',
     },
     {
       year: '2023',
-      region: 'United States (Multiple States)',
+      region: 'Rest of the United States',
       title: 'State Privacy Laws',
       description: 'Virginia (VCDPA), Colorado (CPA), Connecticut (CTDPA), and Utah (UCPA) implement comprehensive privacy laws.',
     },
@@ -129,7 +124,8 @@ const TimelineSection = () => {
               top: '50%',
               height: '2px',
               backgroundColor: 'primary.main',
-              opacity: 0.3,
+              opacity: 0.2,
+              zIndex: 0,
             },
           }}
         >

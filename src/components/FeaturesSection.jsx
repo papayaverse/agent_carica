@@ -76,8 +76,8 @@ const FeaturesSection = () => {
     },
     {
       icon: '🧾',
-      title: 'Automated Reporting',
-      description: 'Auto-generates detailed compliance reports and audit logs',
+      title: 'Verifiable Reporting',
+      description: 'Human Auditors verify detailed compliance reports and audit logs',
     },
   ];
 

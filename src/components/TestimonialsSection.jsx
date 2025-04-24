@@ -57,26 +57,26 @@ const TestimonialCard = ({ quote, author, role, company, index }) => {
 
 const testimonials = [
   {
-    quote: "Thanks for sharing this Report. It gives me solid evidence that we are not doing this right.",
-    author: "Kemal Badur",
+    quote: "Thanks for sharing this Report. It gives me solid evidence that we are not doing this right. Since I talked to you guys, I've been paying more attention to cookie consent messages, and they are now pissing me off more than they used to, with their sneaky, inconsistent and plain dumb way of tricking me into consent 🙂",
+    author: "Seasoned Executive",
     role: "CTO",
     company: "The University of Chicago"
   },
-  {
+  /*{
     quote: "Since I talked to you guys, I've been paying more attention to cookie consent messages, and they are now pissing me off more than they used to, with their sneaky, inconsistent and plain dumb way of tricking me into consent 🙂",
     author: "Kemal Badur",
     role: "CTO",
     company: "The University of Chicago"
-  },
+  },*/
   {
     quote: "This looks strong.",
-    author: "Kevin Schallert",
+    author: "Trusted Advisor",
     role: "Founder",
     company: "Chambre Dark Patterns LLC"
   },
   {
     quote: "I particularly like the references to the specific WCAG standard. We sometime specify the standards we will build to, and the courts will sometime apply different versions!",
-    author: "Chris Sargent",
+    author: "Legal Expert",
     role: "General Counsel",
     company: "Photon"
   }

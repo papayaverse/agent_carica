@@ -56,10 +56,10 @@ const HeroSection = () => {
             width: { xs: 120, md: 150 },
             height: { xs: 120, md: 150 }, // Make height equal to width
             mb: 4,
-            borderRadius: '50%', // Make it circular
+            borderRadius: '30%', // Make it circular
             objectFit: 'cover', // Ensure the image covers the area properly
             backgroundColor: 'white', // Optional: adds a white background
-            padding: 2, // Optional: adds some padding around the logo
+            padding: 0.05, // Optional: adds some padding around the logo
           }}
         />
         <Typography

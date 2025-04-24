@@ -31,7 +31,7 @@ const PricingCard = ({ title, price, features, popular, enterprise, buttonText =
           fontWeight: 600,
         }}
       >
-        {popular ? 'Most Popular' : 'Best Value'}
+        {popular ? 'Recommended' : 'Best Value'}
       </Box>
     )}
     <CardContent sx={{ p: 4 }}>
@@ -109,7 +109,7 @@ const PricingSection = () => {
       title: 'Enterprise Plan',
       price: '$7,500/month',
       features: [
-        '📊 Reports for up to 7500 domains',
+        '📊 Reports for up to 7,500 domains',
         '🤝 White-glove onboarding & API access',
         '🗂️ Dedicated audit logs for privacy/legal teams',
         '📞 Quarterly compliance consultation'

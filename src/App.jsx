@@ -2,6 +2,7 @@ import React from 'react';
 import { Box } from '@mui/material';
 import HeroSection from './components/HeroSection';
 import PricingSection from './components/PricingSection';
+import TimelineSection from './components/TimelineSection';
 import ComplianceSection from './components/ComplianceSection';
 import FeaturesSection from './components/FeaturesSection';
 import HowItWorksSection from './components/HowItWorksSection';
@@ -14,6 +15,7 @@ const App = () => {
     <Box sx={{ minHeight: '100vh' }}>
       <HeroSection />
       <PricingSection />
+      <TimelineSection />
       <ComplianceSection />
       <FeaturesSection />
       <HowItWorksSection />

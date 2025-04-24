@@ -83,7 +83,7 @@ const HeroSection = () => {
             mb: 4,
           }}
         >
-          Automated compliance reports for privacy & accessibility laws powered by AI agents.
+          Compliance reports for Privacy laws & Accessibility standards powered by AI agents.
         </Typography>
         <Stack
           direction={{ xs: 'column', sm: 'row' }}

@@ -89,11 +89,35 @@ const TimelineSection = () => {
       description: 'California Consumer Privacy Act - First major US privacy law giving consumers control over their personal data.',
     },
     {
-      year: '2023',
-      region: 'United States',
-      title: 'State Privacy Laws',
-      description: 'Multiple states including Virginia, Colorado, Connecticut, and Utah implement comprehensive privacy laws.',
+      year: 'Jan 2023',
+      region: 'Virginia',
+      title: 'VCDPA',
+      description: 'Virginia Consumer Data Protection Act',
     },
+    {
+      year: 'Jun 2023',
+      region: 'Colorado',
+      title: 'CPA',
+      description: 'Colorado Privacy Act',
+    },
+    {
+      year: 'Jul 2023',
+      region: 'Connecticut',
+      title: 'CTDPA',
+      description: 'Connecticut Data Privacy Act',
+    },
+    {
+      year: 'Jan 2024',
+      region: 'Utah',
+      title: 'UCPA',
+      description: 'Utah Consumer Privacy Act',
+    },
+    {
+        year: '2025-',
+        region: 'United States',
+        title: 'State Privacy Laws',
+      description: 'Multiple states implementing comprehensive privacy laws.',
+    }
   ];
 
   return (

@@ -127,7 +127,7 @@ const ComplianceSection = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           sx={{ textAlign: 'center', mt: 8 }}
         >
-          <Button
+          {/*<Button
             variant="contained"
             size="large"
             color="primary"
@@ -138,7 +138,7 @@ const ComplianceSection = () => {
             }}
           >
             Protect Your Business Now
-          </Button>
+          </Button>*/}
         </Box>
       </Container>
     </Box>

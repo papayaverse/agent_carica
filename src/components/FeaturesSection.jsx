@@ -66,8 +66,8 @@ const FeaturesSection = () => {
     },
     {
       icon: '🧾',
-      title: 'Verifiable Reporting',
-      description: 'Human Auditors verify detailed compliance reports and audit logs',
+      title: 'Human Verification',
+      description: 'Dedicated auditors manually verify detailed compliance reports and audit logs',
     },
   ];
 

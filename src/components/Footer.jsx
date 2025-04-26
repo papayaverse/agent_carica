@@ -35,13 +35,13 @@ const Footer = () => {
               },
             }}
           >
-            <Link href="#">Terms of Service</Link>
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Contact</Link>
+            {/*<Link href="#">Terms of Service</Link>*/}
+            {/*<Link href="#">Privacy Policy</Link>*/}
+            {/*<Link href="https://www.linkedin.com/company/papaya-privacy-co/">Contact</Link>*/}
           </Stack>
           <Stack direction="row" spacing={2}>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/papaya-privacy-co/"
               target="_blank"
               rel="noopener noreferrer"
               sx={{
@@ -60,7 +60,7 @@ const Footer = () => {
               </svg>
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/papayaverse"
               target="_blank"
               rel="noopener noreferrer"
               sx={{

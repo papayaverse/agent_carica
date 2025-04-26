@@ -52,7 +52,7 @@ const FeaturesSection = () => {
     {
       icon: '🤖',
       title: 'AI Agent Scanning',
-      description: 'Advanced AI agents scan real sites and banners for compliance issues',
+      description: 'Advanced AI agents scan real sites and banners for compliance',
     },
     {
       icon: '🧑‍⚖️',
@@ -61,18 +61,8 @@ const FeaturesSection = () => {
     },
     {
       icon: '🧩',
-      title: 'Integration Ready',
-      description: 'Seamless integration with OneTrust, TrustArc, and UserCentrics',
-    },
-    {
-      icon: '🪪',
-      title: 'GPC Signal Detection',
-      description: 'Identifies ignored Global Privacy Control signals and hidden opt-outs',
-    },
-    {
-      icon: '🧠',
-      title: 'Proprietary Dataset',
-      description: 'Leverages Papaya\'s extensive cookie banner dataset for accurate analysis',
+      title: 'Works with any CMP',
+      description: 'Seamlessly audit privacy interfaces offered by OneTrust, TrustArc, UserCentrics, Osano, and more',
     },
     {
       icon: '🧾',

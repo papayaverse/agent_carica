@@ -9,38 +9,68 @@ const TimelineEvent = ({ year, region, title, description, index }) => {
     threshold: 0.2,
   });
 
+  const isLeft = index % 2 === 0;
+
   return (
-    <Paper
-      component={motion.div}
-      ref={ref}
-      initial={{ opacity: 0 }}
-      animate={inView ? { opacity: 1, x: 0 } : {}}
-      transition={{ duration: 0.6, delay: index * 0.2 }}
-      elevation={2}
+    <Box
       sx={{
-        p: 3,
+        display: 'flex',
+        justifyContent: { xs: 'flex-start', md: isLeft ? 'flex-end' : 'flex-start' },
+        width: { xs: '100%', md: '50%' },
+        alignSelf: { xs: 'flex-start', md: isLeft ? 'flex-start' : 'flex-end' },
         position: 'relative',
-        minWidth: '300px',
-        backgroundColor: 'background.paper',
-        zIndex: 1,
-        '&:hover': {
-          transform: 'translateY(-4px)',
-          transition: 'transform 0.3s ease',
-        },
+        mb: 4,
+        ml: { xs: '60px', md: isLeft ? 0 : 'auto' },
+        pr: { xs: 2, md: isLeft ? 4 : 0 },
+        pl: { xs: 2, md: isLeft ? 0 : 4 },
       }}
     >
-      <Stack spacing={1}>
-        <Typography variant="h6" color="primary.main" fontWeight="bold">
-          {year}: {region}
-        </Typography>
-        <Typography variant="h6" gutterBottom>
-          {title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </Stack>
-    </Paper>
+      <Paper
+        component={motion.div}
+        ref={ref}
+        initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 0.6, delay: index * 0.2 }}
+        elevation={2}
+        sx={{
+          p: 3,
+          position: 'relative',
+          width: '100%',
+          maxWidth: '400px',
+          backgroundColor: 'background.paper',
+          zIndex: 1,
+          '&:hover': {
+            transform: 'translateY(-4px)',
+            transition: 'transform 0.3s ease',
+          },
+          '&::after': {
+            content: '""',
+            position: 'absolute',
+            top: '50%',
+            [isLeft ? 'right' : 'left']: { xs: 'auto', md: -15 },
+            transform: 'translateY(-50%)',
+            width: 0,
+            height: 0,
+            borderTop: '15px solid transparent',
+            borderBottom: '15px solid transparent',
+            [isLeft ? 'borderLeft' : 'borderRight']: { xs: 'none', md: '15px solid #fff' },
+            display: { xs: 'none', md: 'block' },
+          },
+        }}
+      >
+        <Stack spacing={1}>
+          <Typography variant="h6" color="primary.main" fontWeight="bold">
+            {year}: {region}
+          </Typography>
+          <Typography variant="h6" gutterBottom>
+            {title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {description}
+          </Typography>
+        </Stack>
+      </Paper>
+    </Box>
   );
 };
 
@@ -60,21 +90,9 @@ const TimelineSection = () => {
     },
     {
       year: '2023',
-      region: 'Rest of the United States',
+      region: 'United States',
       title: 'State Privacy Laws',
-      description: 'Virginia (VCDPA), Colorado (CPA), Connecticut (CTDPA), and Utah (UCPA) implement comprehensive privacy laws.',
-    },
-    {
-      year: '2024',
-      region: 'United States (Expanding)',
-      title: 'New State Laws',
-      description: 'Texas Data Privacy and Security Act, Florida Privacy Protection Act, Oregon Consumer Privacy Act in development.',
-    },
-    {
-      year: '2025',
-      region: 'United States (Nationwide)',
-      title: 'Privacy Law Expansion',
-      description: 'Over 15 additional states expected to enact comprehensive privacy legislation, moving towards national standards.',
+      description: 'Multiple states including Virginia, Colorado, Connecticut, and Utah implement comprehensive privacy laws.',
     },
   ];
 
@@ -115,35 +133,23 @@ const TimelineSection = () => {
         <Box
           sx={{
             position: 'relative',
-            overflowX: 'hidden',
             '&::after': {
               content: '""',
               position: 'absolute',
-              left: 0,
-              right: 0,
-              top: '50%',
-              height: '2px',
+              left: { xs: '20px', md: '50%' },
+              transform: { xs: 'none', md: 'translateX(-50%)' },
+              top: 0,
+              bottom: 0,
+              width: '2px',
               backgroundColor: 'primary.main',
               opacity: 0.2,
               zIndex: 0,
             },
           }}
         >
-          <Stack
-            direction="row"
-            spacing={4}
-            sx={{
-              pl: 2,
-              pb: 2,
-              overflowX: 'visible',
-            }}
-          >
-            {events.map((event, index) => (
-              <Box key={index}>
-                <TimelineEvent {...event} index={index} />
-              </Box>
-            ))}
-          </Stack>
+          {events.map((event, index) => (
+            <TimelineEvent key={index} {...event} index={index} />
+          ))}
         </Box>
       </Container>
     </Box>

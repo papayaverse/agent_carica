@@ -107,9 +107,9 @@ const PricingSection = () => {
     },
     {
       title: 'Enterprise Plan',
-      price: '$7,500/month',
+      price: '$1,500/month',
       features: [
-        '📊 Reports for up to 7,500 domains',
+        '📊 Reports for up to 100 domains',
         '🤝 White-glove onboarding & API access',
         '🗂️ Dedicated audit logs for privacy/legal teams',
         '📞 Quarterly compliance consultation'

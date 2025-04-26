@@ -106,7 +106,7 @@ const HeroSection = () => {
               },
             }}
           >
-            Get a Demo
+            Request an Audit
           </Button>
           <Button
             variant="outlined"

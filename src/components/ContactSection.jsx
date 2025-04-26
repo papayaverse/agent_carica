@@ -46,7 +46,7 @@ const ContactSection = () => {
             textAlign="center"
             gutterBottom
           >
-            Request a Demo
+            Request an Audit
           </Typography>
           <Typography
             variant="h5"
@@ -54,7 +54,7 @@ const ContactSection = () => {
             textAlign="center"
             sx={{ mb: 6 }}
           >
-            See how Carica can help protect your business
+            See how Carica can help ensure your compliance
           </Typography>
 
           <Box

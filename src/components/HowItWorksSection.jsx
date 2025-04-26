@@ -59,17 +59,17 @@ const HowItWorksSection = () => {
     {
       icon: '🕵️',
       title: 'AI Analysis',
-      description: 'Our AI agent crawls and analyzes your site for compliance issues',
+      description: 'Our AI agent scans and analyzes your website\'s privacy interface',
     },
     {
       icon: '📊',
       title: 'Risk Assessment',
-      description: 'Identifies dark patterns and potential compliance risks',
+      description: 'We identify and document potential compliance risks',
     },
     {
       icon: '📥',
       title: 'Actionable Report',
-      description: 'Receive a detailed, tailored report with specific recommendations',
+      description: 'We send you a detailed, tailored report with regulatory citations and specific recommendations',
     },
   ];
 

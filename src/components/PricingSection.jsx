@@ -39,8 +39,8 @@ const PricingCard = ({ title, price, features, popular, enterprise, buttonText =
         {title}
       </Typography>
       <Typography variant="h2" component="p" gutterBottom sx={{ display: 'flex', alignItems: 'baseline' }}>
-        {price}
-        {!enterprise && <Typography component="span" sx={{ ml: 1 }}>/{price.includes('month') ? 'month' : 'one-time'}</Typography>}
+        {price.includes('/month') ? price : `${price}`}
+        {!enterprise && !price.includes('/month') && <Typography component="span" sx={{ ml: 1 }}>/one-time</Typography>}
       </Typography>
       <Stack spacing={2} sx={{ mt: 4, mb: 4 }}>
         {features.map((feature, index) => (
@@ -88,11 +88,11 @@ const PricingSection = () => {
   };
   const pricingPlans = [
     {
-      title: 'Basic Compliance Scan',
+      title: 'Basic Compliance Audit',
       price: '$99',
       features: [
         '💰 One-time scan of your domain',
-        '📋 PDF report for GDPR, CCPA, WCAG, ADA compliance'
+        '📋 Comprehensive report for GDPR, CCPA, WCAG, ADA compliance'
       ],
     },
     {
@@ -100,7 +100,7 @@ const PricingSection = () => {
       price: '$49/month',
       features: [
         '🔁 Monthly reports for 1 domain',
-        '🛠️ AI-powered cookie banner, GPC, and accessibility audit',
+        '🛠️ AI-powered privacy interface and accessibility audit',
         '🔍 Summary of violations with recommendations'
       ],
       popular: true,
@@ -109,9 +109,9 @@ const PricingSection = () => {
       title: 'Enterprise Plan',
       price: '$1,500/month',
       features: [
-        '📊 Reports for up to 100 domains',
+        '📊 Custom monthly reports for up to 100 domains',
         '🤝 White-glove onboarding & API access',
-        '🗂️ Dedicated audit logs for privacy/legal teams',
+        '🗂️ Dedicated audit logs for privacy and legal teams',
         '📞 Quarterly compliance consultation'
       ],
       enterprise: true,

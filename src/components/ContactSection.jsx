@@ -20,7 +20,7 @@ const ContactSection = () => {
     event.preventDefault();
     const subject = `Demo Request from ${formData.company}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nWebsite: ${formData.website}\nPlan: ${formData.plan}`;
-    window.location.href = `mailto:ram@papayaverse.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:carica@papayaverse.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (

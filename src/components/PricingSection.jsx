@@ -97,7 +97,7 @@ const PricingSection = () => {
     },
     {
       title: 'Starter Plan',
-      price: '$49/month',
+      price: '$149/month',
       features: [
         '🔁 Monthly reports for 1 domain',
         '🛠️ AI-powered privacy interface and accessibility audit',
@@ -107,9 +107,9 @@ const PricingSection = () => {
     },
     {
       title: 'Enterprise Plan',
-      price: '$1,500/month',
+      price: '$Custom/month',
       features: [
-        '📊 Custom monthly reports for up to 100 domains',
+        '📊 Custom monthly reports for upto $100 per domain',
         '🤝 White-glove onboarding & API access',
         '🗂️ Dedicated audit logs for privacy and legal teams',
         '📞 Quarterly compliance consultation'

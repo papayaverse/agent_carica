@@ -1,28 +1,28 @@
 import React from 'react';
-import { Box } from '@mui/material';
-import HeroSection from './components/HeroSection';
-import PricingSection from './components/PricingSection';
-import TimelineSection from './components/TimelineSection';
-import ComplianceSection from './components/ComplianceSection';
-import FeaturesSection from './components/FeaturesSection';
-import HowItWorksSection from './components/HowItWorksSection';
-// import TestimonialsSection from './components/TestimonialsSection';
-import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
+import { ThemeProvider, createTheme } from '@mui/material';
+import AppRouter from './AppRouter';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#FF6B6B',
+      dark: '#FF4F4F',
+    },
+    secondary: {
+      main: '#2F6B48',
+      dark: '#1F4A31',
+    },
+  },
+  typography: {
+    fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
+  },
+});
 
 const App = () => {
   return (
-    <Box sx={{ minHeight: '100vh' }}>
-      <HeroSection />
-      <PricingSection />
-      <TimelineSection />
-      <ComplianceSection />
-      <FeaturesSection />
-      <HowItWorksSection />
-      {/* <TestimonialsSection /> */}
-      <ContactSection />
-      <Footer />
-    </Box>
+    <ThemeProvider theme={theme}>
+      <AppRouter />
+    </ThemeProvider>
   );
 };
 

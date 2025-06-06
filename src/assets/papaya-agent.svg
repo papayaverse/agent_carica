@@ -1,0 +1,15 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Papaya body -->
+  <circle cx="80" cy="80" r="70" fill="#FFA500"/>
+  
+  <!-- Papaya details -->
+  <path d="M80 20C44.6538 20 16 48.6538 16 84C16 119.346 44.6538 148 80 148C115.346 148 144 119.346 144 84C144 48.6538 115.346 20 80 20ZM80 140C49.0722 140 24 114.928 24 84C24 53.0722 49.0722 28 80 28C110.928 28 136 53.0722 136 84C136 114.928 110.928 140 80 140Z" fill="#FF8C00"/>
+  
+  <!-- Friendly face -->
+  <circle cx="60" cy="70" r="8" fill="#4A4A4A"/> <!-- Left eye -->
+  <circle cx="100" cy="70" r="8" fill="#4A4A4A"/> <!-- Right eye -->
+  <path d="M60 95C60 95 80 105 100 95" stroke="#4A4A4A" stroke-width="6" stroke-linecap="round"/> <!-- Smile -->
+  
+  <!-- Privacy shield icon -->
+  <path d="M80 40L65 50V65C65 80 80 85 80 85C80 85 95 80 95 65V50L80 40Z" fill="#4A4A4A"/>
+</svg>

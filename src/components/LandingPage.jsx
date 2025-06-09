@@ -101,7 +101,7 @@ const LandingPage = () => {
                   <Button
                     variant="contained"
                     size="large"
-                    onClick={() => navigate('https://chromewebstore.google.com/detail/agent-papaya-your-privacy/llnpmgaejhooellpbbbicjhdfipckdka')}
+                    onClick={() => window.location.href = 'https://chromewebstore.google.com/detail/agent-papaya-your-privacy/llnpmgaejhooellpbbbicjhdfipckdka'}
                     sx={{
                       backgroundColor: 'white',
                       color: '#FF6B6B',

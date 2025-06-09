@@ -67,7 +67,7 @@ const LandingPage = () => {
               opacity: 0.9,
             }}
           >
-            Papayacy - where Papaya meets Privacy, making digital compliance delightfully simple
+            Papaya + Privacy = Papayacy, making digital compliance delightful and simple
           </Typography>
 
           <Grid container spacing={6} justifyContent="center">
@@ -101,7 +101,7 @@ const LandingPage = () => {
                   <Button
                     variant="contained"
                     size="large"
-                    onClick={() => navigate('/users')}
+                    onClick={() => navigate('https://chromewebstore.google.com/detail/agent-papaya-your-privacy/llnpmgaejhooellpbbbicjhdfipckdka')}
                     sx={{
                       backgroundColor: 'white',
                       color: '#FF6B6B',

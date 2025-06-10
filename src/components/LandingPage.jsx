@@ -45,7 +45,7 @@ const LandingPage = () => {
               mb: 2,
             }}
           >
-            Welcome to Papayacy
+            Welcome to Papaya
           </Typography>
           <Typography
             variant="h2"
@@ -55,7 +55,7 @@ const LandingPage = () => {
               mb: 4,
             }}
           >
-            Privacy is hard, Papayacy is easy
+            Privacy is hard, Papaya.cy is easy
           </Typography>
           <Typography
             variant="h3"
@@ -67,7 +67,7 @@ const LandingPage = () => {
               opacity: 0.9,
             }}
           >
-            Papaya + Privacy = Papayacy, making digital compliance delightful and simple
+            Privacy + Accessibility = Papaya.cy, making online privacy and website compliance delightful and simple for both users and businesses!
           </Typography>
 
           <Grid container spacing={6} justifyContent="center">
